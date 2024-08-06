@@ -1,4 +1,7 @@
-from pprint import pprint
+file_name = 'products.txt'
+file = open(file_name, 'a')
+file.write('')
+file.close()
 class Produkt:
     def __init__(self, name, weight, category):
         self.name = name
@@ -34,6 +37,3 @@ print(p2) # __str__
 s1.add(p1, p2, p3)
 
 print(s1.get_products())
-
-
-
